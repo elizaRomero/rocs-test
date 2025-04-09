@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.Api", "Rocs.Api\Rocs.Api.csproj", "{F068794E-77F5-436B-9B1B-E291635D5FEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F068794E-77F5-436B-9B1B-E291635D5FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F068794E-77F5-436B-9B1B-E291635D5FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F068794E-77F5-436B-9B1B-E291635D5FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F068794E-77F5-436B-9B1B-E291635D5FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59A06EF2-36E2-45FB-9934-13E2D226BC92}
+	EndGlobalSection
+EndGlobal

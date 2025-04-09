@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "+DJfR7MY5pB3F7QXC/RDuVaUH0Oef/VnKttiH2PyCEw=",
+  "Source": "Rocs.Api",
+  "BasePath": "_content/Rocs.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
