@@ -1,5 +1,23 @@
-﻿################################################################################
-# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
-################################################################################
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
 
-/.vs
+# Build outputs
+bin/
+obj/
+
+# Test Results
+TestResults/
+*.trx
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# Logs
+*.log
+
+# Azure Functions (opcional, si usas)
+local.settings.json
