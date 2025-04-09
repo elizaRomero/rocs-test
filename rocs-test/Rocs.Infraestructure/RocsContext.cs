@@ -15,6 +15,8 @@ namespace Rocs.Infraestructure
         }
         public DbSet<Worker> Worker { get; set; }
 
+        public DbSet<ActivityType> ActivityType { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -22,6 +24,13 @@ namespace Rocs.Infraestructure
             {
                 entity.ToTable("Worker");
 
+                entity.Property(e => e.Id).ValueGeneratedNever();
+                entity.Property(e => e.Name).HasMaxLength(500);
+            });
+
+            modelBuilder.Entity<ActivityType>(entity =>
+            {
+                entity.ToTable("ActivityType");
                 entity.Property(e => e.Id).ValueGeneratedNever();
                 entity.Property(e => e.Name).HasMaxLength(500);
             });
