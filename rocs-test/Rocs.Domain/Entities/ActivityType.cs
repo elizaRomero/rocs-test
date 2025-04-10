@@ -14,12 +14,25 @@ namespace Rocs.Domain.Entities
         public int RestHours { get; set; }
         public int LimitWorkers { get; set; }
 
-        public ActivityType(int id, string name, int restHours, int limitWorkers)
+        private ActivityType(int id, string name, int restHours, int limitWorkers)
         {
             Id = id;
             Name = name;
             RestHours = restHours;
             LimitWorkers = limitWorkers;
+        }
+
+        public static ActivityType Create(int id, string name, int restHours, int limitWorkers)
+        {
+            if (string.IsNullOrWhiteSpace(name)){
+                throw new ArgumentNullException("The name cannot be null or empty");
+            }
+            return new ActivityType(
+                id,
+                name,
+                restHours,
+                limitWorkers
+            );
         }
     }
 }
