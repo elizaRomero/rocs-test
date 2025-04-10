@@ -19,8 +19,8 @@ namespace Rocs.Domain.Entities
         }
 
         /// <summary>
-        /// The creation of the Worker is managed by Create method, applying the following rule:
-        /// 1. The Worker's name cannot be nul, empty or contain spaces.
+        /// The creation of a Worker is handled by the Create method, applying the following rule:
+        /// 1. The Worker's name must not be null, empty, or contain spaces.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name"></param>
