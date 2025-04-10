@@ -19,6 +19,8 @@ builder.Services.AddDbContext<RocsContext>(options =>
 builder.Services.AddScoped<IWorkerRepository, WorkerRepository>();
 builder.Services.AddScoped<IWorkerAppService, WorkerAppService>();
 
+builder.Services.AddScoped<IActivityTypeRepository, ActivityTypeRepository>();
+builder.Services.AddScoped<IActivityAppService, ActivityAppService>();
 
 var app = builder.Build();
 
