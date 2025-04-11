@@ -17,6 +17,8 @@ namespace Rocs.Infraestructure
 
         public DbSet<ActivityType> ActivityType { get; set; }
 
+        public DbSet<Activity> Activity { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -33,6 +35,39 @@ namespace Rocs.Infraestructure
                 entity.ToTable("ActivityType");
                 entity.Property(e => e.Id).ValueGeneratedNever();
                 entity.Property(e => e.Name).HasMaxLength(500);
+            });
+
+            modelBuilder.Entity<Activity>(entity =>
+            {
+                entity.ToTable("Activity");
+
+                entity.Property(e => e.Id);
+                entity.Property(e => e.EndDate).HasColumnType("datetime");
+                entity.Property(e => e.Name).HasMaxLength(500);
+                entity.Property(e => e.StartDate).HasColumnType("datetime");
+                entity.Property(e => e.TypeId).HasColumnName("TypeID");
+
+                entity.HasOne(d => d.Type).WithMany(p => p.Activities)
+                    .HasForeignKey(d => d.TypeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Activity_ActivityType");
+
+                entity.HasMany(d => d.Workers).WithMany(p => p.Activities)
+                    .UsingEntity<Dictionary<string, object>>(
+                        "ActivityWorker",
+                        r => r.HasOne<Worker>().WithMany()
+                            .HasForeignKey("WorkerId")
+                            .OnDelete(DeleteBehavior.Restrict)
+                            .HasConstraintName("FK_ActivityWorker_Worker"),
+                        l => l.HasOne<Activity>().WithMany()
+                            .HasForeignKey("ActivityId")
+                            .OnDelete(DeleteBehavior.Cascade)
+                            .HasConstraintName("FK_ActivityWorker_Activity"),
+                        j =>
+                        {
+                            j.HasKey("ActivityId", "WorkerId");
+                            j.ToTable("ActivityWorker");
+                        });
             });
             base.OnModelCreating(modelBuilder);
         }

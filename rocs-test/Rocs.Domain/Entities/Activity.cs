@@ -22,16 +22,14 @@ namespace Rocs.Domain.Entities
 
         public IReadOnlyCollection<Worker> Workers { get; set; }
 
-        private Activity(int id, string name, DateTime startDate, DateTime endDate, int typeId, ActivityType type)
+        private Activity(int id, string name, DateTime startDate, DateTime endDate, int typeId)
         {
             Id = id;
             Name = name;
             StartDate = startDate;
             EndDate = endDate;
             TypeId = typeId;
-            Type = type;
         }
-
         private Activity(int id, string name, DateTime startDate, DateTime endDate, ActivityType type, IReadOnlyCollection<Worker> workers)
         {
             Id = id;

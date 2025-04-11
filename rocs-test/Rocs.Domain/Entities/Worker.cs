@@ -12,6 +12,8 @@ namespace Rocs.Domain.Entities
 
         public string Name { get; set; }
 
+        public virtual IReadOnlyCollection<Activity> Activities { get; set; } = new List<Activity>();
+
         private Worker(int id, string name)
         {
             Id = id;

@@ -14,6 +14,8 @@ namespace Rocs.Domain.Entities
         public int RestHours { get; set; }
         public int LimitWorkers { get; set; }
 
+        public virtual IReadOnlyCollection<Activity> Activities { get; set; } = new List<Activity>();
+
         private ActivityType(int id, string name, int restHours, int limitWorkers)
         {
             Id = id;

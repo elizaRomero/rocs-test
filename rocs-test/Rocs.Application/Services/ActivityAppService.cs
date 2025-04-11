@@ -12,13 +12,16 @@ namespace Rocs.Application.Services
     public class ActivityAppService : IActivityAppService
     {
         private readonly IActivityTypeRepository activityTypeRepository;
+        private readonly IActivityRepository activityRepository;
         private readonly IWorkerRepository workerRepository;
 
         public ActivityAppService(
             IActivityTypeRepository _activityTypeRepository,
+            IActivityRepository _activityRepository,
             IWorkerRepository _workerRepository)
         {
             activityTypeRepository = _activityTypeRepository;
+            activityRepository = _activityRepository;
             workerRepository = _workerRepository;
         }
 
@@ -53,7 +56,7 @@ namespace Rocs.Application.Services
             }
             var activity = Activity.Create(0, newActivity.Name, newActivity.StartDate, newActivity.EndDate, activityType, workers.ToArray());
 
-            //await activityRepository.AddActivity(_activity);
+            await activityRepository.AddActivity(activity);
             return activity.Id;
         }
     }
