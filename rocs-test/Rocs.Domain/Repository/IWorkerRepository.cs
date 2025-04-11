@@ -12,5 +12,7 @@ namespace Rocs.Domain.Repository
         Task<Worker> GetWorkerById(int id);
 
         Task AddWorker(Worker worker);
+
+        Task<IEnumerable<Worker>> GetWorkersByIds(IReadOnlyCollection<int> ids);
     }
 }

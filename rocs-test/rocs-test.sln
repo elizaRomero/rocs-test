@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.Domain", "Rocs.Domain\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.Infraestructure", "Rocs.Infraestructure\Rocs.Infraestructure.csproj", "{66E076C2-26AE-F4C4-0867-0ED9DA8BD230}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.DTO", "Rocs.DTO\Rocs.DTO.csproj", "{174D9EE8-E2C8-439A-A70F-ACDD5542049F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{66E076C2-26AE-F4C4-0867-0ED9DA8BD230}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66E076C2-26AE-F4C4-0867-0ED9DA8BD230}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66E076C2-26AE-F4C4-0867-0ED9DA8BD230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174D9EE8-E2C8-439A-A70F-ACDD5542049F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174D9EE8-E2C8-439A-A70F-ACDD5542049F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174D9EE8-E2C8-439A-A70F-ACDD5542049F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174D9EE8-E2C8-439A-A70F-ACDD5542049F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

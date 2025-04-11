@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Rocs.Application.Services;
+using Rocs.DTO;
 
 namespace Rocs.Api.Controllers
 {
@@ -30,13 +31,20 @@ namespace Rocs.Api.Controllers
             return Ok(response);
         }
 
-
         [HttpGet]
         [Route("activityTypes")]
         public async Task<IActionResult> GetAllActivityTypes()
         {
             var response = await activityAppService.GetAllActivityTypes();
             return Ok(response);
+        }
+
+        [HttpPost]
+        [Route("activity")]
+        public async Task<IActionResult> AddNewActivity([FromBody] NewActivity newActivity)
+        {
+            var activityId = await activityAppService.AddActivity(newActivity);
+            return Ok(activityId);
         }
     }
 }

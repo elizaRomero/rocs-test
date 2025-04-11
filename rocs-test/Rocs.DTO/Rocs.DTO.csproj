@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Rocs.Domain\Rocs.Domain.csproj" />
-    <ProjectReference Include="..\Rocs.DTO\Rocs.DTO.csproj" />
-  </ItemGroup>
-
 </Project>

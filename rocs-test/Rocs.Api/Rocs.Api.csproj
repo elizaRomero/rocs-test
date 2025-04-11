@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Rocs.Application\Rocs.Application.csproj" />
+    <ProjectReference Include="..\Rocs.DTO\Rocs.DTO.csproj" />
     <ProjectReference Include="..\Rocs.Infraestructure\Rocs.Infraestructure.csproj" />
   </ItemGroup>
 
