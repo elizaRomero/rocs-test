@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Rocs.Application.Services;
 using Rocs.Domain.Repository;
+using Rocs.Domain.Services;
 using Rocs.Infraestructure;
 using Rocs.Infraestructure.Repository;
 
@@ -22,6 +23,8 @@ builder.Services.AddScoped<IWorkerAppService, WorkerAppService>();
 builder.Services.AddScoped<IActivityTypeRepository, ActivityTypeRepository>();
 builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
 builder.Services.AddScoped<IActivityAppService, ActivityAppService>();
+
+builder.Services.AddScoped<IReviewConflictsService, ReviewConflictsService>();
 
 var app = builder.Build();
 

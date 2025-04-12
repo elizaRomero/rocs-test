@@ -32,6 +32,8 @@ namespace Rocs.Infraestructure.Repository
         {
             return await db.Set<Worker>()
                             .Where(x => ids.Contains(x.Id))
+                            .Include(w => w.Activities)  // include the collection of activities
+                            .ThenInclude(a => a.Type)
                             .ToListAsync();
         }
     }
