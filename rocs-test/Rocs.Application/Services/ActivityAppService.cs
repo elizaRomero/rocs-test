@@ -63,5 +63,10 @@ namespace Rocs.Application.Services
             await activityRepository.AddActivity(activity);
             return activity.Id;
         }
+
+        public async Task<Activity> GetActivityById(int id)
+        {
+            return await activityRepository.GetActivityById(id);
+        }
     }
 }

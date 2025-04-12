@@ -46,5 +46,12 @@ namespace Rocs.Api.Controllers
             var activityId = await activityAppService.AddActivity(newActivity);
             return Ok(activityId);
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetActivityById(int id)
+        {
+            var response = await activityAppService.GetActivityById(id);
+            return Ok(response);
+        }
     }
 }

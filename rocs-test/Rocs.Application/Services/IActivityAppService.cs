@@ -17,5 +17,7 @@ namespace Rocs.Application.Services
         Task<ICollection<ActivityType>> GetAllActivityTypes();
 
         Task<int> AddActivity(NewActivity newActivity);
+
+        Task<Activity> GetActivityById(int id);
     }
 }

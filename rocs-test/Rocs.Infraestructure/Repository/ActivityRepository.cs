@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Rocs.Domain.Entities;
 using Rocs.Domain.Repository;
 
@@ -30,9 +31,12 @@ namespace Rocs.Infraestructure.Repository
             throw new NotImplementedException();
         }
 
-        public Task<Activity> GetActivityById(int id)
+        public async Task<Activity> GetActivityById(int id)
         {
-            throw new NotImplementedException();
+            var activity = await db.Activity
+                        .Include(a => a.Workers)
+                        .FirstOrDefaultAsync(a => a.Id == id);
+            return activity;
         }
     }
 }
