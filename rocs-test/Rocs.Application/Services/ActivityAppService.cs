@@ -68,5 +68,10 @@ namespace Rocs.Application.Services
         {
             return await activityRepository.GetActivityById(id);
         }
+
+        public async Task DeleteActivity(int id)
+        {
+            await activityRepository.DeleteActivity(id);
+        }
     }
 }

@@ -53,5 +53,13 @@ namespace Rocs.Api.Controllers
             var response = await activityAppService.GetActivityById(id);
             return Ok(response);
         }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<ActionResult> DeleteActivity(int id)
+        {
+            await activityAppService.DeleteActivity(id);
+            return Ok();
+        }
     }
 }

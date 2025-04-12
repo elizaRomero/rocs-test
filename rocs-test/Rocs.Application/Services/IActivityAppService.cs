@@ -19,5 +19,7 @@ namespace Rocs.Application.Services
         Task<int> AddActivity(NewActivity newActivity);
 
         Task<Activity> GetActivityById(int id);
+
+        Task DeleteActivity(int id);
     }
 }

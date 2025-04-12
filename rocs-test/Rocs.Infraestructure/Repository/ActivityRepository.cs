@@ -26,11 +26,6 @@ namespace Rocs.Infraestructure.Repository
             await db.SaveChangesAsync();
         }
 
-        public Task DeleteActivity(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<Activity> GetActivityById(int id)
         {
             var activity = await db.Activity
@@ -38,5 +33,23 @@ namespace Rocs.Infraestructure.Repository
                         .FirstOrDefaultAsync(a => a.Id == id);
             return activity;
         }
+
+        public async Task DeleteActivity(int id)
+        {
+            try
+            {
+                var activity = await db.Activity.FindAsync(id);
+                if (activity != null)
+                {
+                    db.Activity.Remove(activity);
+                    await db.SaveChangesAsync();
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new InvalidOperationException("The activity could not be deleted due to referential integrity constraints.", ex);
+            }
+        }
+
     }
 }
