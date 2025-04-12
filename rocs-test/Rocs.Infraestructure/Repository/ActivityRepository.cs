@@ -51,5 +51,9 @@ namespace Rocs.Infraestructure.Repository
             }
         }
 
+        public async Task UpdateActivity(Activity activity)
+        {
+            await db.SaveChangesAsync();
+        }
     }
 }

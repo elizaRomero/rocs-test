@@ -61,5 +61,12 @@ namespace Rocs.Api.Controllers
             await activityAppService.DeleteActivity(id);
             return Ok();
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateActivity([FromBody] UpdateActivity updateActivity)
+        {
+            await activityAppService.UpdateActivity(updateActivity);
+            return Ok();
+        }
     }
 }

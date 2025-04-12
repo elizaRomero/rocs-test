@@ -21,5 +21,7 @@ namespace Rocs.Application.Services
         Task<Activity> GetActivityById(int id);
 
         Task DeleteActivity(int id);
+
+        Task UpdateActivity(UpdateActivity updateActivity);
     }
 }

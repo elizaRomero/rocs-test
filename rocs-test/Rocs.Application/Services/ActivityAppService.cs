@@ -73,5 +73,13 @@ namespace Rocs.Application.Services
         {
             await activityRepository.DeleteActivity(id);
         }
+
+        public async Task UpdateActivity(UpdateActivity updateActivity)
+        {
+            var activity = await activityRepository.GetActivityById(updateActivity.Id);
+            activity.UpdateDates(updateActivity.StartDate, updateActivity.EndDate);
+            await activityRepository.UpdateActivity(activity);
+            
+        }
     }
 }

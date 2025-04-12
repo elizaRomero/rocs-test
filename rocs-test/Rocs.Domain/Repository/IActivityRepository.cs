@@ -14,5 +14,7 @@ namespace Rocs.Domain.Repository
         Task<Activity> GetActivityById(int id);
 
         Task DeleteActivity(int id);
+
+        Task UpdateActivity(Activity activity);
     }
 }

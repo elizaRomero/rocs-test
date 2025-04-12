@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,11 +44,9 @@ namespace Rocs.Domain.Entities
 
         public static Activity Create(int id, string name, DateTime startDate, DateTime endDate, ActivityType activityType, IReadOnlyCollection<Worker> workers)
         {
+            IsEndDateAfterStartDate(startDate, endDate);
             if (string.IsNullOrWhiteSpace(name)){
                 throw new ArgumentNullException("The name cannot be null or empty");
-            }
-            if (endDate <= startDate){
-                throw new ArgumentException("End date must be after the start date");
             }
             if (workers.Count() > activityType.LimitWorkers){
                 throw new ArgumentException($"Activity cannot be performed by more than {activityType.LimitWorkers} worker(s).");
@@ -61,6 +60,19 @@ namespace Rocs.Domain.Entities
                 activityType,
                 workers
             );
+        }
+
+        public void UpdateDates(DateTime startDate, DateTime endDate)
+        {
+            IsEndDateAfterStartDate(startDate, endDate);
+            StartDate = startDate;
+            EndDate = endDate;
+        }
+
+        private static void IsEndDateAfterStartDate(DateTime startDate, DateTime endDate)
+        {
+            if (endDate <= startDate) 
+                throw new ArgumentException("End date must be after the start date");
         }
     }
 }
