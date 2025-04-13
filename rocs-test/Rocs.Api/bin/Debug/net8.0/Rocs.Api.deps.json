@@ -677,6 +677,9 @@
         }
       },
       "Rocs.Domain/1.0.0": {
+        "dependencies": {
+          "Rocs.DTO": "1.0.0"
+        },
         "runtime": {
           "Rocs.Domain.dll": {
             "assemblyVersion": "1.0.0.0",

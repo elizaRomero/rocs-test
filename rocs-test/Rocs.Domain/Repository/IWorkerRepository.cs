@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Rocs.Domain.Entities;
+using Rocs.DTO;
 
 namespace Rocs.Domain.Repository
 {
@@ -14,5 +15,7 @@ namespace Rocs.Domain.Repository
         Task AddWorker(Worker worker);
 
         Task<IEnumerable<Worker>> GetWorkersByIds(IReadOnlyCollection<int> ids);
+
+        Task<ICollection<WorkerActivity>> GetTop10Workers();
     }
 }

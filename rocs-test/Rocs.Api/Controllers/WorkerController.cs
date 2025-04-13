@@ -28,5 +28,13 @@ namespace Rocs.Api.Controllers
             var response = await workerAppService.GetWorkerById(id);
             return Ok(response);
         }
+
+        [HttpGet]
+        [Route("top10Workers")]
+        public async Task<IActionResult> GetTop10Workers()
+        {
+            var response = await workerAppService.GetTop10Workers();
+            return Ok(response);
+        }
     }
 }

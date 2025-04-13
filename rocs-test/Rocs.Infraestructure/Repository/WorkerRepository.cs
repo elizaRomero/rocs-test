@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Rocs.Domain.Entities;
 using Rocs.Domain.Repository;
+using Rocs.DTO;
 
 namespace Rocs.Infraestructure.Repository
 {
@@ -36,5 +37,33 @@ namespace Rocs.Infraestructure.Repository
                             .ThenInclude(a => a.Type)
                             .ToListAsync();
         }
+
+        public async Task<ICollection<WorkerActivity>> GetTop10Workers()
+        {
+            var query = @"SELECT TOP 10	w.Id, 
+				                        w.Name, 
+				                        SUM(DATEDIFF(HOUR, a.StartDate, a.EndDate)) AS TotalHours,     
+				                        SUM(DATEDIFF(HOUR, 
+						                        CASE 
+							                        WHEN a.StartDate > GETDATE() THEN a.StartDate 
+							                        ELSE GETDATE() 
+						                        END, 
+						                        CASE 
+							                        WHEN a.EndDate < DATEADD(DAY, 7, GETDATE()) THEN a.EndDate 
+							                        ELSE DATEADD(DAY, 7, GETDATE()) 
+						                        END)) AS TotalHoursNext7Days
+                                                    FROM Activity a
+                                              INNER JOIN ActivityWorker aw on a.Id = aw.ActivityId
+                                              INNER JOIN Worker w on w.Id = aw.WorkerId 
+                                                   WHERE a.StartDate < DATEADD(DAY, 7, GETDATE())
+						                             AND a.EndDate > GETDATE()
+                                                GROUP BY w.Id, w.Name
+                                                ORDER BY TotalHoursNext7Days DESC;";
+
+            return await db.Set<WorkerActivity>()
+                .FromSqlRaw(query)
+                .ToListAsync();
+        }
+
     }
 }

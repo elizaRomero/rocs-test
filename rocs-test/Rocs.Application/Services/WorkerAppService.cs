@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rocs.Domain.Entities;
 using Rocs.Domain.Repository;
+using Rocs.DTO;
 
 namespace Rocs.Application.Services
 {
@@ -25,6 +26,11 @@ namespace Rocs.Application.Services
         public async Task<Worker> GetWorkerById(int id)
         {
             return await workerRepository.GetWorkerById(id);
+        }
+
+        public async Task<ICollection<WorkerActivity>> GetTop10Workers()
+        {
+            return await workerRepository.GetTop10Workers();
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Rocs.Domain.Entities;
+using Rocs.DTO;
 
 namespace Rocs.Infraestructure
 {
@@ -18,6 +19,8 @@ namespace Rocs.Infraestructure
         public DbSet<ActivityType> ActivityType { get; set; }
 
         public DbSet<Activity> Activity { get; set; }
+
+        public DbSet<WorkerActivity> WorkerActivity { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -69,6 +72,13 @@ namespace Rocs.Infraestructure
                             j.ToTable("ActivityWorker");
                         });
             });
+
+            modelBuilder.Entity<WorkerActivity>(entity =>
+            {
+                entity.HasNoKey();
+                entity.ToView(null);
+            });
+
             base.OnModelCreating(modelBuilder);
         }
     }
