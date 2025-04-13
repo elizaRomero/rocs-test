@@ -17,6 +17,9 @@ namespace Rocs.Domain.Services
             {
                 foreach (var workerActivity in worker.Activities)
                 {
+                    if (workerActivity.Id == activity.Id)
+                        continue;
+
                     bool overlaps = activity.StartDate < workerActivity.EndDate && 
                                     activity.EndDate > workerActivity.StartDate;
 

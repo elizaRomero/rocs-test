@@ -29,7 +29,9 @@ namespace Rocs.Infraestructure.Repository
         public async Task<Activity> GetActivityById(int id)
         {
             var activity = await db.Activity
+                        .Include(a => a.Type)
                         .Include(a => a.Workers)
+                        .ThenInclude(w => w.Activities)
                         .FirstOrDefaultAsync(a => a.Id == id);
             return activity;
         }

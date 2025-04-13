@@ -78,6 +78,9 @@ namespace Rocs.Application.Services
         {
             var activity = await activityRepository.GetActivityById(updateActivity.Id);
             activity.UpdateDates(updateActivity.StartDate, updateActivity.EndDate);
+            var conflicts = reviewConflictsService.ReviewConflicts(activity);
+            if (conflicts.Any())
+                throw new InvalidOperationException(string.Join("\n", conflicts));
             await activityRepository.UpdateActivity(activity);
             
         }
