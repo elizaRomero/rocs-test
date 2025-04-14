@@ -62,6 +62,22 @@ namespace Rocs.Domain.Entities
             );
         }
 
+        public static Activity Create(int id, string name, DateTime startDate, DateTime endDate, int typeId)
+        {
+            IsEndDateAfterStartDate(startDate, endDate);
+            if (string.IsNullOrWhiteSpace(name)){
+                throw new ArgumentNullException("The name cannot be null or empty");
+            }
+
+            return new Activity(
+                id,
+                name,
+                startDate,
+                endDate,
+                typeId
+            );
+        }
+
         public void UpdateDates(DateTime startDate, DateTime endDate)
         {
             IsEndDateAfterStartDate(startDate, endDate);
