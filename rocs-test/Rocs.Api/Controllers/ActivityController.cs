@@ -10,24 +10,27 @@ namespace Rocs.Api.Controllers
     public class ActivityController : ControllerBase
     {
         private readonly IActivityAppService activityAppService;
+        private readonly IActivityTypeAppService activityTypeAppService;
 
-        public ActivityController(IActivityAppService _activityAppService)
+        public ActivityController(IActivityAppService _activityAppService, 
+            IActivityTypeAppService _activityTypeAppService)
         {
             activityAppService = _activityAppService;
+            activityTypeAppService = _activityTypeAppService;
         }
 
         [HttpPost]
         [Route("activityType")]
         public async Task<IActionResult> AddActivityType(int id, string name, int restHours, int limitWorkers)
         {
-            await activityAppService.AddActivityType(id, name, restHours, limitWorkers);
+            await activityTypeAppService.AddActivityType(id, name, restHours, limitWorkers);
             return Ok();
         }
 
         [HttpGet("activityType/{id}")]
         public async Task<IActionResult> GetActivityTypeById(int id)
         {
-            var response = await activityAppService.GetActivityTypeById(id);
+            var response = await activityTypeAppService.GetActivityTypeById(id);
             return Ok(response);
         }
 
@@ -35,7 +38,7 @@ namespace Rocs.Api.Controllers
         [Route("activityTypes")]
         public async Task<IActionResult> GetAllActivityTypes()
         {
-            var response = await activityAppService.GetAllActivityTypes();
+            var response = await activityTypeAppService.GetAllActivityTypes();
             return Ok(response);
         }
 

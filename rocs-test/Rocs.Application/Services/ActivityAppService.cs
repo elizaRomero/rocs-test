@@ -24,21 +24,7 @@ namespace Rocs.Application.Services
             reviewConflictsService = _reviewConflictsService;
         }
 
-        public async Task AddActivityType(int id, string name, int restHours, int limitWorkers)
-        {
-            var activityType = ActivityType.Create(id, name, restHours, limitWorkers);
-            await activityTypeRepository.AddActivityType(activityType);
-        }
-
-        public async Task<ActivityType> GetActivityTypeById(int id)
-        {
-            return await activityTypeRepository.GetActivityTypeById(id);
-        }
-
-        public async Task<ICollection<ActivityType>> GetAllActivityTypes()
-        {
-            return await activityTypeRepository.GetAllActivityTypes();
-        }
+        
 
         public async Task<int> AddActivity(NewActivity newActivity)
         {
@@ -77,7 +63,11 @@ namespace Rocs.Application.Services
         public async Task UpdateActivity(UpdateActivity updateActivity)
         {
             var activity = await activityRepository.GetActivityById(updateActivity.Id);
+            if (activity == null){
+                throw new InvalidOperationException("Activity does not exist");
+            }
             activity.UpdateDates(updateActivity.StartDate, updateActivity.EndDate);
+
             var conflicts = reviewConflictsService.ReviewConflicts(activity);
             if (conflicts.Any())
                 throw new InvalidOperationException(string.Join("\n", conflicts));

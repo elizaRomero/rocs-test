@@ -21,6 +21,8 @@ builder.Services.AddScoped<IWorkerRepository, WorkerRepository>();
 builder.Services.AddScoped<IWorkerAppService, WorkerAppService>();
 
 builder.Services.AddScoped<IActivityTypeRepository, ActivityTypeRepository>();
+builder.Services.AddScoped<IActivityTypeAppService, ActivityTypeAppService>();
+
 builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
 builder.Services.AddScoped<IActivityAppService, ActivityAppService>();
 
