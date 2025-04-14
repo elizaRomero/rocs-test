@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\entities\\andnameisnullorempty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\entities\\andnameisnullorempty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\services\\andthereareconflicts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\services\\andthereareconflicts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC6DD336-8797-26C9-5466-D004ADFCD0E1}|Rocs.Domain\\Rocs.Domain.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain\\services\\reviewconflictsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6DD336-8797-26C9-5466-D004ADFCD0E1}|Rocs.Domain\\Rocs.Domain.csproj|solutionrelative:rocs.domain\\services\\reviewconflictsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFF869D6-7FBF-1E00-7146-F5EE9A798631}|Rocs.Application\\Rocs.Application.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.application\\services\\activityappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFF869D6-7FBF-1E00-7146-F5EE9A798631}|Rocs.Application\\Rocs.Application.csproj|solutionrelative:rocs.application\\services\\activityappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC6DD336-8797-26C9-5466-D004ADFCD0E1}|Rocs.Domain\\Rocs.Domain.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain\\entities\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC6DD336-8797-26C9-5466-D004ADFCD0E1}|Rocs.Domain\\Rocs.Domain.csproj|solutionrelative:rocs.domain\\entities\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\services\\reviewconflicts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\services\\reviewconflicts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\services\\andtherearenoconflicts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\services\\andtherearenoconflicts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\entities\\andnameisnullorempty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\entities\\andnameisnullorempty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AndNameIsNullOrEmpty.cs",
-              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
-              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
-              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
-              "RelativeToolTip": "Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA+wC4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ActivityAppService.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application\\Services\\ActivityAppService.cs",
+              "RelativeDocumentMoniker": "Rocs.Application\\Services\\ActivityAppService.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application\\Services\\ActivityAppService.cs",
+              "RelativeToolTip": "Rocs.Application\\Services\\ActivityAppService.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAswD4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:13:43.263Z",
+              "WhenOpened": "2025-04-14T18:22:56.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ReviewConflictsService.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain\\Services\\ReviewConflictsService.cs",
+              "RelativeDocumentMoniker": "Rocs.Domain\\Services\\ReviewConflictsService.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain\\Services\\ReviewConflictsService.cs",
+              "RelativeToolTip": "Rocs.Domain\\Services\\ReviewConflictsService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCYAAADJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T18:02:23.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AndThereAreConflicts.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Services\\AndThereAreConflicts.cs",
+              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Services\\AndThereAreConflicts.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Services\\AndThereAreConflicts.cs",
+              "RelativeToolTip": "Rocs.Domain.Test\\Services\\AndThereAreConflicts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T17:58:04.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AndThereAreNoConflicts.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Services\\AndThereAreNoConflicts.cs",
+              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Services\\AndThereAreNoConflicts.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Services\\AndThereAreNoConflicts.cs",
+              "RelativeToolTip": "Rocs.Domain.Test\\Services\\AndThereAreNoConflicts.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T17:56:14.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewConflicts.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Services\\ReviewConflicts.cs",
+              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Services\\ReviewConflicts.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Services\\ReviewConflicts.cs",
+              "RelativeToolTip": "Rocs.Domain.Test\\Services\\ReviewConflicts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T17:54:09.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Activity.cs",
               "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain\\Entities\\Activity.cs",
               "RelativeDocumentMoniker": "Rocs.Domain\\Entities\\Activity.cs",
               "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain\\Entities\\Activity.cs",
               "RelativeToolTip": "Rocs.Domain\\Entities\\Activity.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwvzAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvzAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T15:12:26.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AndNameIsNullOrEmpty.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
+              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
+              "RelativeToolTip": "Rocs.Domain.Test\\Entities\\AndNameIsNullOrEmpty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:13:43.263Z",
               "EditorCaption": ""
             }
           ]
