@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rocs.Application.Test.Services
 {
-    public class ActivityAppServiceTests
+    public abstract class ActivityAppServiceTestBase
     {
-        [Fact]
-        public void Test1()
-        {
-
-        }
     }
 }
