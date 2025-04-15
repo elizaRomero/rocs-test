@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rocs.Domain.Entities;
 
-namespace Rocs.Domain.Test.Entities
+namespace Rocs.Domain.Test.Entities.Activities
 {
     public class CreateActivity
     {

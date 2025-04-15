@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Rocs.Domain.Entities;
 
-namespace Rocs.Domain.Test.Entities
+namespace Rocs.Domain.Test.Entities.Activities
 {
-    public class AndEndDateIsEarlierThanStartDate : CreateActivity
+    public class AndWorkersNumberIsHigherThanLimitWorkers : CreateActivity
     {
         [Test]
         public void ShouldThrowArgumentExceptionWithCorrectErrorMessage()
@@ -16,13 +16,15 @@ namespace Rocs.Domain.Test.Entities
                 Id = 1;
                 Name = "ActivityBuildComponent";
                 StartDate = DateTime.Now;
-                EndDate = DateTime.Now.AddHours(-2);
+                EndDate = DateTime.Now.AddHours(2);
                 Type = ActivityType.Create(1, "Build Component", 2, 1);
                 Workers = new[] {
-                Worker.Create(1, "A")
+                    Worker.Create(1, "A"),
+                    Worker.Create(2, "B")
             };
                 var exception = Assert.Throws<ArgumentException>(() => CreatingActivity());
-                Assert.That(exception.Message, Is.EqualTo("End date must be after the start date"));
+                string errorMessage = $"Activity cannot be performed by more than {Type.LimitWorkers} worker(s).";
+                Assert.That(exception.Message, Is.EqualTo(errorMessage));
             }
         }
     }
