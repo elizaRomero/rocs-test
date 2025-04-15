@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\entities\\activitytypes\\activitytypetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\entities\\activitytypes\\activitytypetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{316A6D66-34A5-4194-981E-BF6B3EE0F89F}|Rocs.Application.Test\\Rocs.Application.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.application.test\\services\\activityappservices\\updateactivitytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{316A6D66-34A5-4194-981E-BF6B3EE0F89F}|Rocs.Application.Test\\Rocs.Application.Test.csproj|solutionrelative:rocs.application.test\\services\\activityappservices\\updateactivitytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC6DD336-8797-26C9-5466-D004ADFCD0E1}|Rocs.Domain\\Rocs.Domain.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain\\entities\\activitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC6DD336-8797-26C9-5466-D004ADFCD0E1}|Rocs.Domain\\Rocs.Domain.csproj|solutionrelative:rocs.domain\\entities\\activitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{316A6D66-34A5-4194-981E-BF6B3EE0F89F}|Rocs.Application.Test\\Rocs.Application.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.application.test\\services\\activityappservices\\addactivitywithvalidparameterstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{316A6D66-34A5-4194-981E-BF6B3EE0F89F}|Rocs.Application.Test\\Rocs.Application.Test.csproj|solutionrelative:rocs.application.test\\services\\activityappservices\\addactivitywithvalidparameterstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\entities\\activities\\andworkersnumberishigherthanlimitworkers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\entities\\activities\\andworkersnumberishigherthanlimitworkers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.domain.test\\entities\\workers\\workertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF239069-1C00-4501-A8E9-D9828FA958D1}|Rocs.Domain.Test\\Rocs.Domain.Test.csproj|solutionrelative:rocs.domain.test\\entities\\workers\\workertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFF869D6-7FBF-1E00-7146-F5EE9A798631}|Rocs.Application\\Rocs.Application.csproj|c:\\eliza\\cursos\\repaso_net\\projects\\rocs-test\\rocs-test\\rocs.application\\services\\activityappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFF869D6-7FBF-1E00-7146-F5EE9A798631}|Rocs.Application\\Rocs.Application.csproj|solutionrelative:rocs.application\\services\\activityappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ActivityType.cs",
-              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain\\Entities\\ActivityType.cs",
-              "RelativeDocumentMoniker": "Rocs.Domain\\Entities\\ActivityType.cs",
-              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain\\Entities\\ActivityType.cs",
-              "RelativeToolTip": "Rocs.Domain\\Entities\\ActivityType.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Title": "AddActivityWithValidParametersTests.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application.Test\\Services\\ActivityAppServices\\AddActivityWithValidParametersTests.cs",
+              "RelativeDocumentMoniker": "Rocs.Application.Test\\Services\\ActivityAppServices\\AddActivityWithValidParametersTests.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application.Test\\Services\\ActivityAppServices\\AddActivityWithValidParametersTests.cs",
+              "RelativeToolTip": "Rocs.Application.Test\\Services\\ActivityAppServices\\AddActivityWithValidParametersTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T11:02:03.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AndWorkersNumberIsHigherThanLimitWorkers.cs",
-              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\Activities\\AndWorkersNumberIsHigherThanLimitWorkers.cs",
-              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Entities\\Activities\\AndWorkersNumberIsHigherThanLimitWorkers.cs",
-              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\Activities\\AndWorkersNumberIsHigherThanLimitWorkers.cs",
-              "RelativeToolTip": "Rocs.Domain.Test\\Entities\\Activities\\AndWorkersNumberIsHigherThanLimitWorkers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:59:12.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorkerTests.cs",
-              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\Workers\\WorkerTests.cs",
-              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Entities\\Workers\\WorkerTests.cs",
-              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\Workers\\WorkerTests.cs",
-              "RelativeToolTip": "Rocs.Domain.Test\\Entities\\Workers\\WorkerTests.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwBUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:54:24.191Z",
+              "WhenOpened": "2025-04-15T12:27:55.698Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ActivityTypeTests.cs",
-              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\ActivityTypes\\ActivityTypeTests.cs",
-              "RelativeDocumentMoniker": "Rocs.Domain.Test\\Entities\\ActivityTypes\\ActivityTypeTests.cs",
-              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Domain.Test\\Entities\\ActivityTypes\\ActivityTypeTests.cs",
-              "RelativeToolTip": "Rocs.Domain.Test\\Entities\\ActivityTypes\\ActivityTypeTests.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwEsAAAAhAAAAAAAAAA==",
+              "Title": "UpdateActivityTests.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application.Test\\Services\\ActivityAppServices\\UpdateActivityTests.cs",
+              "RelativeDocumentMoniker": "Rocs.Application.Test\\Services\\ActivityAppServices\\UpdateActivityTests.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application.Test\\Services\\ActivityAppServices\\UpdateActivityTests.cs",
+              "RelativeToolTip": "Rocs.Application.Test\\Services\\ActivityAppServices\\UpdateActivityTests.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAnwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:53:39.381Z",
+              "WhenOpened": "2025-04-15T12:26:54.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ActivityAppService.cs",
+              "DocumentMoniker": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application\\Services\\ActivityAppService.cs",
+              "RelativeDocumentMoniker": "Rocs.Application\\Services\\ActivityAppService.cs",
+              "ToolTip": "C:\\Eliza\\Cursos\\Repaso_NET\\Projects\\rocs-test\\rocs-test\\Rocs.Application\\Services\\ActivityAppService.cs",
+              "RelativeToolTip": "Rocs.Application\\Services\\ActivityAppService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T12:20:49.749Z",
               "EditorCaption": ""
             }
           ]

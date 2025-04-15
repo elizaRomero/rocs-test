@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.DTO", "Rocs.DTO\Rocs.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.Domain.Test", "Rocs.Domain.Test\Rocs.Domain.Test.csproj", "{FF239069-1C00-4501-A8E9-D9828FA958D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.Application.Test", "Rocs.Application.Test\Rocs.Application.Test.csproj", "{06F181E6-BF0B-42CA-9F42-54EA5BE3ABD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocs.Application.Test", "Rocs.Application.Test\Rocs.Application.Test.csproj", "{316A6D66-34A5-4194-981E-BF6B3EE0F89F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{FF239069-1C00-4501-A8E9-D9828FA958D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF239069-1C00-4501-A8E9-D9828FA958D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF239069-1C00-4501-A8E9-D9828FA958D1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06F181E6-BF0B-42CA-9F42-54EA5BE3ABD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06F181E6-BF0B-42CA-9F42-54EA5BE3ABD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06F181E6-BF0B-42CA-9F42-54EA5BE3ABD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06F181E6-BF0B-42CA-9F42-54EA5BE3ABD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316A6D66-34A5-4194-981E-BF6B3EE0F89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316A6D66-34A5-4194-981E-BF6B3EE0F89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316A6D66-34A5-4194-981E-BF6B3EE0F89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316A6D66-34A5-4194-981E-BF6B3EE0F89F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
